@@ -1,0 +1,5 @@
+
+
+def display_board(game_baord):
+  print(str(game_baord[0]))
+  print('Test 1')
