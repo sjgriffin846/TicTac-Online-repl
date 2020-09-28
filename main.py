@@ -14,4 +14,4 @@ def display_board(game_baord):
 display_board(game_board)
 
 print('hello')
-print(randint(1, 200))
+print(randint(1, 100))
