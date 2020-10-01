@@ -25,6 +25,7 @@ def play_on():
     if result_yn == 'N':
       print('Smart move')
       control = 2
+      exit(0)
       return 'N'
       break
     
@@ -33,7 +34,7 @@ y_n = play_on()
 
 def player_input(a):
   while a == 'Y':
-    result = input('Please Select  position for your next move 1-9')
+    result = input('Please Select  position for your next move 1-9:____')
     if int(result) in range(1,10):
       return int(result)
       break
