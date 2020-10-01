@@ -18,7 +18,7 @@ def play_on():
 
     if result_yn == "Y":
       print('Okay ghost')
-      print('function here that starts game?')
+      return 'Y'
       control = 2
     
     if result_yn == 'N':
@@ -26,4 +26,17 @@ def play_on():
       control = 2
       break
     
-play_on()
+y_n = play_on()
+
+
+def player_input(a):
+  while a == 'Y':
+    result = input('Please Select  position for your next move 1-9')
+    if int(result) in range(1,10):
+      return result
+      break
+    else:
+      pass
+
+
+player_input(y_n)
