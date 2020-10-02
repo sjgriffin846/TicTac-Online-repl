@@ -78,3 +78,9 @@ def space_check(game_board, space):
     return False
 
 space_check(game_board, 4)
+
+def full_check(board):
+  for item in board:
+    if item == ' ':
+      return False
+    
