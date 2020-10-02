@@ -69,8 +69,12 @@ def win_check(game_board,marker):
   if game_board[6] == marker and game_board[7] == marker and game_board[8] == marker:
     print(f'Winner! {marker} Wins it!')
 
-test_board = ['X','O','O','X','X','X','O','X','O','X']
+win_check(game_board, 'X')
 
-display_board(test_board)
+def space_check(game_board, space):
+  if game_board[space] == ' ':
+    return True
+  else:
+    return False
 
-win_check(test_board, 'X')
+space_check(game_board, 4)
