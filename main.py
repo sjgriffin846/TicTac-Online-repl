@@ -1,6 +1,6 @@
 game_board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
-print('Hello and Welcome to Tic Tac Toe Murder')
+print('Hello and Welcome to Tic Tac Toe')
 
 def display_board(game_baord):
     print(str(game_baord[0]) + '|'+ str(game_baord[1]) + '|'+ str(game_baord[2]))
@@ -50,3 +50,27 @@ def place_marker(board,marker,position):
 place_marker(game_board, 'X', selection)
 
 display_board(game_board)
+
+def win_check(game_board,marker):
+  if game_board[0] == marker and game_board[1] == marker and game_board[2] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[0] == marker and game_board[3] == marker and game_board[6] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[0] == marker and game_board[4] == marker and game_board[8] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[1] == marker and game_board[4] == marker and game_board[7] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[2] == marker and game_board[5] == marker and game_board[8] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[2] == marker and game_board[4] == marker and game_board[6] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[3] == marker and game_board[4] == marker and game_board[5] == marker:
+    print(f'Winner! {marker} Wins it!')
+  if game_board[6] == marker and game_board[7] == marker and game_board[8] == marker:
+    print(f'Winner! {marker} Wins it!')
+
+test_board = ['X','O','O','X','X','X','O','X','O','X']
+
+display_board(test_board)
+
+win_check(test_board, 'X')
